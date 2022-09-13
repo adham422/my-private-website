@@ -1,0 +1,166 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 50px 400px;
+    gap: 20px 20px;
+    justify-content: center;
+    align-content: center;
+}
+.container div{
+    background-color:lightseagreen;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+} 
+
+ .contant{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(6, 70px);
+    justify-content: center;
+    align-content: center;
+    gap: 20px 20px;
+}
+.contant div{
+    background-color:rgba(10, 151, 151, 0.805);
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contant .one,
+.contant .eight{
+    grid-column: 1/-1;
+}
+.contant .two{
+    grid-column: 1/3;
+}
+.contant .five{
+    grid-row: span 3;
+    grid-column: span 2;
+} 
+
+.contant_2{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,400px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: center;
+    align-content: center;
+    gap: 20px 20px;
+}
+.contant_2 div{
+    background-color:rgba(152, 152, 152, 0.627);
+    text-align: center;
+}
+.contant_2 div h2{
+    color: lightseagreen;
+    margin-bottom: 0;
+}
+.contant_2 div p{
+    font-size: 14px;
+}
+.contant_2 .first,
+.contant_2 .fourty{
+    grid-column: 1/-1;
+}
+
+@media (max-width:768px){
+    .contant_2{
+        grid-template-columns: repeat(3,200px);
+    }
+    .contant_2 div h2{
+        color: red;
+    }
+    .contant_2 .fourty{
+        grid-column: auto;
+    }
+}
+@media (max-width:600px) {
+    .contant_2{
+        grid-template-columns: repeat(2,250px);
+    }
+    .contant_2 div h2{
+        color: black;
+    }
+    .contant_2 .second,
+    .contant_2 .therd,
+    .contant_2 .fourty{
+    grid-column: 1/-1;
+}
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+ .contant_3{
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(6, 200px) 100px auto auto auto;
+    grid-template-rows: 50px;
+    align-items: center;
+}
+.imgg{
+    grid-column: span 7;
+}
+.text{
+    background-color: blue;
+    color:#eee;
+    padding: 10px;
+    border-radius: 5px;
+    justify-self: center;
+} 
+@media (max-width:1450px){
+    .contant_3{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 30px) ;
+    }
+    .contant_3 div{
+        grid-column: 1/-1;
+    }
+    .text{
+        background-color: transparent;
+        justify-self: start;
+        color: black;
+        padding: 0;
+    }
+}
+@media (max-width:768px){
+    .contant_3{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 30px) ;
+    }
+    .imgg{
+        grid-column: 1/-1;
+    }
+    .imgg img{
+        width: 15%;
+    }
+    .contant_3 div{
+        grid-column: 1/-1;
+        font-size: 1.25rem;
+    }
+    .text{
+        background-color: transparent;
+        justify-self: start;
+        color: black;
+        padding: 0;
+    }
+} 
+
+

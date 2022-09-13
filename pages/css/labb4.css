@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align:center ;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+div.header {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red,
+.blue,
+.green,
+.yellow,
+.pink,
+.purple {
+    
+    margin: 10px ;
+    background-color: white;
+    text-align: center;
+    flex-direction:row:
+    align-content:space-between;
+    justify-content:left;
+    align-items: center;
+
+}
+
+div.body,
+.img  {
+    padding: 50px;
+    background-color: aqua;
+    width: 100%;
+}
+
+.paragraph {
+    color: white;
+    text text-align: center;
+}
+
+#btn {
+    color: white;
+    background-color: red;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.img {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+.img1
+ {
+    background-color:red;
+    box-sizing: content-box;
+}
+.p {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    
+}
+.img2 {
+    background-color: yellow;
+    box-sizing: content-box;
+}
+.img3 {
+    box-sizing: content-box;
+    background-color: cadetblue;
+}
+.img1,
+.img2,
+.img3 {
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 50px solid aqua;
+}
+#g {
+    display: flex;
+    padding: 1000px;
+    margin-left:-1300px ;
+    top:auto;
+
+
+}
